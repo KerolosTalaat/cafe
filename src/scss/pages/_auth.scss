@@ -1,0 +1,64 @@
+.SignIn, .SignUp {
+    height: 100%;
+	padding: 0;
+	.card {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		border:none;
+		padding-top: 40px;
+	}
+	header{
+		padding: 0px 15px;
+		text-align: center;
+	}
+	.card-body {
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+    	justify-content: center;
+		.col-form-label {
+			padding: 0;
+			font-family: Poppins,sans-serif;
+			font-weight: 500;
+			line-height: 2.6;
+		}
+		form{
+			width: 50%;
+		}
+		.form-input {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid grey;
+			padding: 0px 5px 5px;
+			&:focus {
+    			outline: none;
+				border: none;
+				border-bottom: 1px solid #0062cc;
+			}
+		}
+		.sign-button {
+			margin-top: 10px;
+			border-radius: 30px;
+			font-size: 16px;
+			margin-left: 15%;
+			display: flex;
+    		margin: 20px auto;
+			background: $btnColor;
+			border: 0;
+			&:hover{
+				background: $btnHoverColor;
+			}
+		}
+	}
+	@media(max-width: 992px){
+		.card-body form{
+			width: 60%;
+		}
+	}
+	@media(max-width: 567px){
+		.card-body form{
+			width: 80%;
+		}
+	}
+}
